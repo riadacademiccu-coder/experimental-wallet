@@ -219,7 +219,7 @@ export default function TransferForm({ availableBalancePoisha, senderEmail }: Pr
 
       <button
         type="submit"
-        disabled={!canSubmit || status === "submitting" || inFlight.current}
+        disabled={!canSubmit || inFlight.current}
         className="mt-7 w-full rounded-2xl bg-gradient-to-r from-emerald-300 to-teal-400 px-6 py-4 text-sm font-extrabold text-slate-950 shadow-xl shadow-emerald-950/25 transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-40"
       >
         {status === "submitting" ? "Confirming transfer…" : "Send wallet transfer →"}
