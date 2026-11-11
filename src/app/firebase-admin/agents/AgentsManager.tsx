@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useEffect, useMemo, useState } from "react";
+import { FormEvent, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 
 type AgentStatus = "ACTIVE" | "INACTIVE";
@@ -89,10 +89,6 @@ export default function AgentsManager({ initialAgents }: Props) {
   const [error, setError] = useState("");
   const [uncertain, setUncertain] = useState(false);
   const [search, setSearch] = useState("");
-
-  useEffect(() => {
-    setAgents(initialAgents);
-  }, [initialAgents]);
 
   const activeCount = agents.filter((agent) => agent.status === "ACTIVE" && agent.verified).length;
   const verifiedCount = agents.filter((agent) => agent.verified).length;
