@@ -172,6 +172,7 @@ export default async function FirebaseAdminWithdrawalsPage() {
         </section>
 
         <WithdrawalsManager
+          key={`${pendingSnapshot.size >= 200}:${withdrawals.map((request) => `${request.id}:${request.status}:${request.reviewedAt ?? ""}`).join("|")}`}
           initialWithdrawals={withdrawals}
           pendingLimitReached={pendingSnapshot.size >= 200}
         />
