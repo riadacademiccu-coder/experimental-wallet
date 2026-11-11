@@ -287,7 +287,7 @@ export default function DashboardClient({
                   <span className="mt-2 text-center text-[11px] font-bold leading-tight text-[#172554] sm:text-sm">
                     {action.label}
                   </span>
-                  {!action.href && <span className="mt-1 text-center text-[9px] font-semibold text-slate-400 sm:text-[10px]">Coming soon</span>}
+                  {!action.href && <span className="mt-1 text-center text-[9px] font-semibold text-slate-400 sm:text-[10px]">Not available</span>}
                 </>
               );
 
@@ -300,13 +300,16 @@ export default function DashboardClient({
                   {content}
                 </Link>
               ) : (
-                <div
+                <button
                   key={action.label}
-                  aria-disabled="true"
-                  className="flex min-h-[104px] cursor-not-allowed flex-col items-center justify-center rounded-2xl border border-slate-200/80 bg-white px-1.5 py-4 sm:min-h-[116px]"
+                  type="button"
+                  disabled
+                  title="Bill payments are not available yet"
+                  aria-label="Pay bills not available yet"
+                  className="group flex min-h-[104px] cursor-not-allowed flex-col items-center justify-center rounded-2xl border border-slate-200/80 bg-white px-1.5 py-4 sm:min-h-[116px]"
                 >
                   {content}
-                </div>
+                </button>
               );
             })}
           </div>
@@ -331,7 +334,7 @@ export default function DashboardClient({
                     {service.label}
                   </span>
                   <span className="mt-1 text-center text-[9px] font-medium text-slate-400">
-                    {service.href ? "View history" : "Coming soon"}
+                    {service.href ? "View history" : "Not available"}
                   </span>
                 </>
               );
