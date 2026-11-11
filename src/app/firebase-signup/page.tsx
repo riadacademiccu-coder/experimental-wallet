@@ -220,7 +220,7 @@ export default function FirebaseSignupPage() {
                     ✓
                   </div>
                   <p className="mt-8 text-xs font-bold uppercase tracking-[0.24em] text-emerald-600">Welcome aboard</p>
-                  <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-slate-950">You're all set.</h2>
+                  <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-slate-950">You&apos;re all set.</h2>
                   <p className="mt-5 text-sm leading-7 text-slate-600">
                     Your new account has been created successfully.
                   </p>
@@ -229,7 +229,7 @@ export default function FirebaseSignupPage() {
                     Please check your inbox and spam folder.
                   </p>
                   <p className="mt-4 text-sm leading-7 text-slate-500">
-                    We'll connect the Firebase login page next.
+                    We&apos;ll connect the Firebase login page next.
                   </p>
                   <Link href="/" className="mt-8 inline-flex items-center justify-center rounded-2xl bg-slate-950 px-6 py-3.5 text-sm font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-slate-800">
                     Return to homepage <span aria-hidden="true" className="ml-2">↗</span>
