@@ -231,7 +231,7 @@ export default async function FirebaseAdminUserDetailsPage({
 
           {!validAccount && (
             <div className="mb-5 rounded-2xl border border-amber-400/20 bg-amber-400/10 p-5 text-sm text-amber-200">
-              This user's wallet record is missing or does not
+              This user&apos;s wallet record is missing or does not
               match their Firebase profile.
             </div>
           )}
