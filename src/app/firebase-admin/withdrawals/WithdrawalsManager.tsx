@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useEffect, useMemo, useState, type FormEvent } from "react";
+import { useMemo, useState, type FormEvent } from "react";
 
 export type WithdrawalRecord = {
   id: string;
@@ -89,10 +89,6 @@ export default function WithdrawalsManager({
   const [needsRefresh, setNeedsRefresh] = useState(false);
   const [notice, setNotice] = useState("");
   const [error, setError] = useState("");
-
-  useEffect(() => {
-    setWithdrawals(initialWithdrawals);
-  }, [initialWithdrawals]);
 
   const pending = withdrawals.filter((request) => request.status === "PENDING");
   const approvedCount = withdrawals.filter((request) => request.status === "APPROVED").length;
@@ -257,7 +253,7 @@ export default function WithdrawalsManager({
       </section>
 
       <div className="rounded-2xl border border-cyan-300/15 bg-cyan-300/[0.05] px-5 py-4 text-sm leading-6 text-slate-300">
-        <strong className="text-cyan-200">Simulated withdrawals only.</strong> Approving a request deducts held test funds; rejecting it returns held test funds to the user's available wallet. No actual cash is sent to the agent.
+        <strong className="text-cyan-200">Simulated withdrawals only.</strong> Approving a request deducts held test funds; rejecting it returns held test funds to the user&apos;s available wallet. No actual cash is sent to the agent.
       </div>
 
       {pendingLimitReached && (

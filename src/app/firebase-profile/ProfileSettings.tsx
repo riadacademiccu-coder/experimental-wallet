@@ -115,7 +115,7 @@ export default function ProfileSettings({ initialFullName, email }: Props) {
             className="w-full rounded-2xl border border-white/10 bg-slate-950/50 px-5 py-4 text-sm text-white outline-none transition placeholder:text-slate-600 focus:border-emerald-400/60 focus:ring-4 focus:ring-emerald-400/10 disabled:opacity-60"
             placeholder="Enter your full name"
           />
-          <p className="mt-2 text-xs text-slate-500">2–80 characters. This won't change your login email.</p>
+          <p className="mt-2 text-xs text-slate-500">2–80 characters. This won&apos;t change your login email.</p>
         </div>
 
         <div className="mt-7">
@@ -145,7 +145,7 @@ export default function ProfileSettings({ initialFullName, email }: Props) {
       <section className="rounded-[30px] border border-white/10 bg-white/[0.055] p-6 backdrop-blur-xl sm:p-9">
         <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-emerald-300">Account security</p>
         <h2 className="mt-3 text-2xl font-extrabold">Password &amp; login</h2>
-        <p className="mt-3 text-sm leading-7 text-slate-400">Need a new password? We'll send a secure password-reset link to your verified email address.</p>
+        <p className="mt-3 text-sm leading-7 text-slate-400">Need a new password? We&apos;ll send a secure password-reset link to your verified email address.</p>
         <button
           type="button"
           disabled={sendingReset}

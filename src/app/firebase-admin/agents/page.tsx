@@ -105,7 +105,7 @@ export default async function FirebaseAdminAgentsPage() {
           </div>
         </section>
 
-        <AgentsManager initialAgents={agents} />
+        <AgentsManager key={agents.map((agent) => `${agent.id}:${agent.status}:${agent.verified}`).join("|")} initialAgents={agents} />
 
         <footer className="py-10 text-center text-xs text-slate-500">
           © {new Date().getFullYear()} Kids Bank Ltd

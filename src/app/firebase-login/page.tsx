@@ -343,7 +343,7 @@ export default function FirebaseLoginPage() {
                   </form>
 
                   <p className="mt-7 text-center text-sm text-slate-500">
-                    Don't have an account?{" "}
+                    Don&apos;t have an account?{" "}
                     <Link href="/firebase-signup" className="font-extrabold text-emerald-700 transition-colors hover:text-emerald-900">
                       Create an account
                     </Link>
